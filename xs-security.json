@@ -1,0 +1,43 @@
+{
+  "xsappname": "books",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.capAdmin",
+      "description": "capAdmin"
+    },
+    {
+      "name": "$XSAPPNAME.capEmp",
+      "description": "capEmp"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "capAdmin",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.capAdmin"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "capEmp",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.capEmp"
+      ],
+      "attribute-references": []
+    }
+  ],
+  "authorities": [
+    "$ACCEPT_GRANTED_AUTHORITIES"
+  ],
+  "oauth2-configuration": {
+    "token-validity": 9000,
+    "redirect-uris": [
+      "https://*.cfapps.us10-001.hana.ondemand.com/login/callback"
+    ]
+  },
+  "xsenableasyncservice": "true"
+}
