@@ -122,10 +122,10 @@ Add under `parameters.content.instance.destinations` **before** `existing_destin
 ```yaml
 - Name: srv-api
   Authentication: OAuth2UserTokenExchange
-  ServiceInstanceName: <your-xsuaa-instance>
-  ServiceKeyName: <your-xsuaa-key>
+  ServiceInstanceName: <app-name>-auth
+  ServiceKeyName: <app>auth-key>
   URL: ~{srv-api/srv-url}
-  sap.cloud.service: capm-fiori
+  sap.cloud.service: <manifest.json sap.cloud.service name >
 ```
 
 ---
