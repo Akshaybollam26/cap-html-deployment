@@ -43,8 +43,8 @@ SAP HANA Cloud
 ### 1️⃣ Create CAPM Project
 
 ```bash
-cds init capm-fiori-approuter
-cd capm-fiori-approuter
+cds init capm-html-deployment
+cd capm-html-deployment
 ```
 
 ---
@@ -91,7 +91,6 @@ This generates `mta.yaml`.
 6. Select **UI = Yes**
 7. ❌ Do **NOT** overwrite `xs-security.json`
 
-📸 *Screenshot Placeholder*: Approuter creation wizard
 
 ---
 
@@ -103,7 +102,6 @@ This generates `mta.yaml`.
 4. Provide a **different module name** (e.g., `app`)
 5. ✅ Enable **Add SAP Fiori Launchpad Configuration**
 
-📸 *Screenshot Placeholder*: Fiori module creation
 
 ---
 
@@ -184,32 +182,3 @@ cf deploy mta_archives/<project>_1.0.0.mtar
 | Destination not found | Verify destination-content module |
 | App not visible       | Check HTML5 repo & FLP config     |
 | Forbidden             | Wait for a while then data will get previewed| 
-
----
-
-## 📚 References
-
-* SAP CAP Documentation
-* SAP BTP MTA Guide
-* Managed Approuter Docs
-* SAP Fiori Tools
-
----
-
-## ⭐ Recommended Enhancements
-
-* Add CAP authorization (`@requires`, `@restrict`)
-* Integrate SAP Build Process Automation (BPA)
-* Enable Draft Handling
-* CI/CD with SAP Continuous Integration
-
----
-
-## 👤 Author
-
-**Akshay Bollam**
-SAP BTP | CAPM | Fiori | BPA
-
----
-
-If this helped you, ⭐ star the repo and share it with your team!
